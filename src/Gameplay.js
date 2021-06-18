@@ -1,4 +1,4 @@
-var AMOUNT_DIAMONDS = 10;
+var AMOUNT_DIAMONDS = 30;
 var AMOUNT_BOOBLES = 30;
 
 GamePlayManager = {
@@ -27,7 +27,6 @@ GamePlayManager = {
   },
   create: function () {
     game.add.sprite(0, 0, 'background');
-    this.music.play();
     this.boobleArray= [];
     for(var i = 0; i < AMOUNT_BOOBLES; i++){
       var xBooble = game.rnd.integerInRange(1,1140);
